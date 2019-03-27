@@ -3,17 +3,17 @@
 Answer these on your own, then compare answers as a group
 
 1.  What is React?
-
+javascript library for front end applications; 
 2.  What is create-react-app?
-
+template for basic React project
 3.  What is Component Based Architecture?
-
+uses components 
 4.  What is JSX?
-
+syntax used in react that combines html and javascript syntax to render data on webpage
 5.  What is the virtual DOM?
-
+a remote DOM that let's you work on one component at a time
 6.  What is unidirectional (one-way) data flow?
-
+parent-child 
 ### Understand
 
 Discuss these questions in pairs if you have a 4-person group

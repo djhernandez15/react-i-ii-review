@@ -3,15 +3,15 @@
 Answer these on your own, then compare answers as a group
 
 1.  What are props?
-
+data taype that can be manipulated and passed through other components
 2.  How do you pass props from a parent to a child?
-
+super and using self closing tags and including them in there
 3.  How do you access props from a class based child component?
-
+this.props
 4.  How do you access props from a functional component?
-
+props.propName
 5.  How do you bind a function to a parent component so that it can be passed to a child?
-
+this.function = this.function.bind(this)
 ### Understand
 
 Discuss this question in pairs if you have a 4-person group
@@ -53,6 +53,12 @@ class Queue extends Component {
 }
 ```
 
+class Student extends Component {
+  askQuestion(newQuestion){
+    let questions = [...this.state.questions, newQuestion];
+    this.setState({questions})
+  }
+}
 ### Apply
 
 Try these on your own, but work together if you start to get stuck.

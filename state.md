@@ -3,18 +3,18 @@
 Answer these on your own, then compare answers as a group
 
 1.  What is state?
-
+state is a data type that is manipulated within the component and cannot be changed from an outside component. 
 2.  Where do you set initial state?
-
+inside the constructor object.
 3.  What method do you use to update state?
-
+this.setstate
 ### Understand
 
 Discuss this question in pairs if you have a 4-person group
 
 4.  Explain what's happening in this component.
 
-```jsx
+<!-- ```jsx
 import React, { Component } from "react";
 
 class LeadMentor extends Component {
@@ -39,8 +39,38 @@ class LeadMentor extends Component {
     </div>;
   }
 }
-```
+``` -->
 
+
+import React, {component} from 'react;
+
+class Student extends Component{
+  constructor(){
+    super();
+    this.state = {
+      questionsAsked: 0
+      listOfQuestions: [];
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState({questionsAsked: this.state.questionsAsked + 1})
+  }
+  handleChange() {
+    this.setState({questionsAsked: e.target.value})
+  }
+  render() {
+    <div className='student-container'>
+      <input onChange = {this.handleChange} type='text'></h3>
+      <button onClick={this.handleClick}>Increase Questions Asked</button>
+    </div>;
+    <div className='student-questions'>
+      <ul>
+      
+      </ul>
+    </div>
+  }
+}
 ### Apply
 
 Try these on your own, but work together if you start to get stuck.
